@@ -1,3 +1,31 @@
 * {
     box-sizing: border-box;
-  }
+    padding: 10px;
+    text-align: center;
+}
+body {
+    background-color: #e4dad1;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}    
+h1, h2 {
+    font-family: 'Libre Franklin', sans-serif; 
+}
+header {
+    background-color: #b8b8b8;
+}
+main {
+    background-color: #bdb7b7;
+}
+nav {
+    background-color: #8e8b8f;
+}
+p {
+    font-family: 'Lato', sans-serif;  
+}
+section {
+}
+.portfolioBody {
+    background-color: #555555;
+    font-color: white;
+}
