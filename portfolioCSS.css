@@ -23,8 +23,7 @@ main {
 nav {
     background-color: #fde34d;
     border: 1px solid black;
-    margin-bottom: 10px;
-    padding: 10px;
+    margin-bottom: 15px;
     padding-right: 30vw;
     text-align: center;
     width: 100%;
@@ -42,6 +41,9 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
+li a:hover {
+    background-color: #ffbe0b;
+  }
 ul {
     list-style-type: none;
     margin: 0;
@@ -111,7 +113,7 @@ ul {
    }
    nav {
        grid-area: nav;
-       padding-right: 10px;
+       padding: 0px;
    }
    .aboutMe {
        grid-area: about;
