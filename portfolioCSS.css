@@ -1,20 +1,19 @@
 * {
     box-sizing: border-box;
-    padding: 10px;
-    text-align: center;
 }
 body {
     background-color: #e4dad1;
-    margin-left: 10vw;
-    margin-right: 10vw;
 }    
 h1, h2 {
     font-family: 'Libre Franklin', sans-serif; 
+    text-align: center;
 }
 header {
     background-color: #b8b8b8;
     border-radius: 25px;
-    margin-bottom: 10px;
+    margin: 25px 10vw 10px 10vw;
+    padding: 10px;
+    text-align: center;
 }
 main {
     margin-bottom: 10px;
@@ -22,6 +21,12 @@ main {
 nav {
     background-color: #8e8b8f;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 100%;
 }
 p {
     font-family: 'Lato', sans-serif;  
@@ -30,20 +35,25 @@ p {
     background-color: #bdb7b7;
     border-radius: 25px;
     margin-bottom: 20px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 10px;
 }
 .portfolioBody {
     background-color: #555555;
     color: white;
     margin-bottom: 10px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 10px;
 }
 .portfolioWorks {
     background-color: #bdb7b7; 
+    padding: 10px;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 @media only screen and (min-width: 480px) and (max-width: 1024px) {
-    body {
-        margin-left: 5vw;
-        margin-right: 5vw;
-    }
     h1 {
         font-size: 6vw;
     }
