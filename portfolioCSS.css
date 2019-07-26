@@ -2,15 +2,17 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #e4dad1;
+    background-color: #0a000a;
 }    
 h1, h2 {
     font-family: 'Libre Franklin', sans-serif; 
     text-align: center;
 }
 header {
-    background-color: #b8b8b8;
+    background-color: #226A64;
+    background: url("https://cdn.pixabay.com/photo/2017/06/15/17/31/background-2406119_960_720.jpg") center no-repeat;
     border-radius: 25px;
+    color: white;
     margin: 25px 10vw 10px 10vw;
     padding: 40px;
     text-align: center;
@@ -19,20 +21,35 @@ main {
     margin-bottom: 10px;
 }
 nav {
-    background-color: #8e8b8f;
+    background-color: #fde34d;
+    border: 1px solid black;
     margin-bottom: 10px;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-evenly;
     padding: 10px;
+    padding-right: 30vw;
+    text-align: center;
     width: 100%;
 }
 p {
     font-family: 'Lato', sans-serif;  
 }
+li {
+    float: right;
+  }
+li a {
+    color: #660722;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 .aboutMe {
-    background-color: #bdb7b7;
+    background-color: #367772;
+    color: white;
     border-radius: 25px;
     margin-bottom: 20px;
     margin-left: 10vw;
@@ -40,7 +57,7 @@ p {
     padding: 10px;
 }
 .portfolioBody {
-    background-color: #555555;
+    background-color: #bdb7b7;
     color: white;
     margin-bottom: 10px;
     margin-left: 10vw;
@@ -48,7 +65,7 @@ p {
     padding: 10px;
 }
 .portfolioWorks {
-    background-color: #bdb7b7; 
+    background: url("https://image.freepik.com/free-vector/orange-triangle-geometric-pattern_1182-592.jpg") repeat;
     padding: 10px;
     margin-left: 10vw;
     margin-right: 10vw;
@@ -62,6 +79,8 @@ p {
     }
     header {
         height: 30vh;
+        width: 100%;
+        margin: 0px;
         display: flex;
         flex-direction: column;
         align-content: center;
@@ -92,6 +111,7 @@ p {
    }
    nav {
        grid-area: nav;
+       padding-right: 10px;
    }
    .aboutMe {
        grid-area: about;
