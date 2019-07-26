@@ -1,24 +1,52 @@
 * {
     box-sizing: border-box;
-    padding: 10px;
-    text-align: center;
 }
 body {
     background-color: #e4dad1;
-    margin-left: 10vw;
-    margin-right: 10vw;
-}    
+}  
+h1 {
+    font-size: 3em;
+}   
 h1, h2 {
     font-family: 'Libre Franklin', sans-serif; 
+    text-align: center;
 }
 header {
     background-color: #b8b8b8;
+    border-radius: 25px;
+    margin: 25px 10vw 10px 10vw;
+    padding: 40px;
+    text-align: center;
 }
+li {
+    float: right;
+  }
+li a {
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #ffbe0b;
+  }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 main {
     background-color: #bdb7b7;
+    margin-bottom: 10px;
 }
 nav {
     background-color: #8e8b8f;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    padding-right: 30vw;
+    text-align: center;
+    width: 100%;
 }
 p {
     font-family: 'Lato', sans-serif;  
@@ -26,7 +54,81 @@ p {
 section {
     
 }
+.aboutMe {
+    background-color: #11080a;
+    color: white;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 10px;
+}
 .portfolioBody {
     background-color: #555555;
-    font-color: white;
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 10px;
+}
+.portfolioWorks {
+    padding: 10px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+    h1 {
+        font-size: 6vw;
+    }
+    h2 {
+        font-size: 5vw;
+    }
+    header {
+        height: 30vh;
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+    nav {
+        font-size: 3.5vw;
+        height: 5vh;
+    }
+    p {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width: 1025px) { 
+   body {
+       display: grid;
+       grid-template-areas:
+        "nav nav"
+        "header about"
+        "header portfolio";
+       grid-template-columns: 35vw 65vw; 
+       grid-template-rows: auto;
+   }
+   header {
+       grid-area: header;
+       margin: 25px;
+   }
+   nav {
+       grid-area: nav;
+       padding: 0px;
+   }
+   .aboutMe {
+       grid-area: about;
+       margin: 40px;
+   }
+   .portfolioBody {
+       grid-area: portfolio;
+       margin: 25px;
+   }
+   .portfolioWorks {
+       grid-area: portfolio;
+       margin: 25px;
+   }
 }
