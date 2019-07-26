@@ -12,7 +12,7 @@ header {
     background-color: #b8b8b8;
     border-radius: 25px;
     margin: 25px 10vw 10px 10vw;
-    padding: 10px;
+    padding: 40px;
     text-align: center;
 }
 main {
@@ -77,6 +77,33 @@ p {
 }
 
 @media screen and (min-width: 1025px) { 
-    /* STYLES HERE */
+   body {
+       display: grid;
+       grid-template-areas:
+        "nav nav"
+        "header about"
+        "header portfolio";
+       grid-template-columns: 35vw 65vw; 
+       grid-template-rows: auto;
+   }
+   header {
+       grid-area: header;
+       margin: 25px;
+   }
+   nav {
+       grid-area: nav;
+   }
+   .aboutMe {
+       grid-area: about;
+       margin: 40px;
+   }
+   .portfolioBody {
+       grid-area: portfolio;
+       margin: 25px;
+   }
+   .portfolioWorks {
+       grid-area: portfolio;
+       margin: 25px;
+   }
 }
 
