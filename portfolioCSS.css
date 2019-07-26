@@ -1,6 +1,12 @@
 * {
     box-sizing: border-box;
 }
+address {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 50px 0px 50px;
+}
 body {
     background-color: #33363a;
 } 
@@ -17,7 +23,7 @@ header {
     border-radius: 25px;
     color: white;
     margin: 25px 10vw 10px 10vw;
-    padding: 40px;
+    padding: 30px;
     text-align: center;
 }
 main {
@@ -56,18 +62,32 @@ ul {
     background-color: #367772;
     color: white;
     border-radius: 25px;
+    line-height: 150%;
     margin-bottom: 20px;
     margin-left: 10vw;
     margin-right: 10vw;
     padding: 10px;
 }
+.contactIcon {
+    width: 50px;
+    border-radius: 8px;
+}
 .portfolioBody {
-    background-color: #bdb7b7;
-    color: white;
+    background-color: white;
+    border: 2px solid #660722;
+    border-radius: 10px;
     margin-bottom: 10px;
     margin-left: 10vw;
     margin-right: 10vw;
     padding: 10px;
+}
+.portfolioBody img {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 .portfolioWorks {
     background: url("https://image.freepik.com/free-vector/orange-triangle-geometric-pattern_1182-592.jpg") repeat;
@@ -107,9 +127,9 @@ ul {
        grid-template-areas:
         "nav nav"
         "header about"
-        "header portfolio";
+        ". portfolio";
        grid-template-columns: 35vw 65vw; 
-       grid-template-rows: auto;
+       grid-template-rows: auto 28vw auto;
    }
    header {
        grid-area: header;
@@ -117,19 +137,20 @@ ul {
    }
    nav {
        grid-area: nav;
-       padding: 0px;
+       margin-right: 40px;
+       padding-right: 20px;
    }
    .aboutMe {
        grid-area: about;
+       line-height: auto;
        margin: 40px;
    }
    .portfolioBody {
-       grid-area: portfolio;
        margin: 25px;
    }
    .portfolioWorks {
        grid-area: portfolio;
-       margin: 25px;
+       margin: 30px;
    }
 }
 
