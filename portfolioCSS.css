@@ -126,31 +126,40 @@ ul {
        display: grid;
        grid-template-areas:
         "nav nav"
-        "header about"
-        ". portfolio";
+        "header portfolio"
+        "about portfolio";
        grid-template-columns: 35vw 65vw; 
        grid-template-rows: auto 28vw auto;
-   }
+   } 
    header {
-       grid-area: header;
-       margin: 25px;
+       grid-row-start: 1;
+       grid-row-end: 2;
+       margin: 70px 10px 10px 20px;
+       height: 70vh;
    }
    nav {
-       grid-area: nav;
-       margin-right: 40px;
+       position: fixed;
        padding-right: 20px;
    }
+   ul {
+        top: 0;
+        width: 100%;
+   }
    .aboutMe {
-       grid-area: about;
+       grid-column-start: 1;
+       grid-row-start: 2;
        line-height: auto;
-       margin: 40px;
+       margin: 0px 0px 10px 20px;
+       padding: 10px;
    }
    .portfolioBody {
        margin: 25px;
    }
    .portfolioWorks {
-       grid-area: portfolio;
-       margin: 30px;
+       grid-column-start: 2;
+       grid-column-end: 3;
+       grid-row-start: 1;
+       margin: 75px 30px 10px 30px;
    }
 }
 
