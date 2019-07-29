@@ -26,6 +26,7 @@ header {
     align-content: center;
     color: white;
     margin: 25px 10vw 10px 10vw;
+    max-height: 80vh;
     padding: 30px;
     text-align: center;
     text-shadow: 1px 0 black, 0 3px black, 3px 0 black, 0 1px black;
@@ -100,6 +101,14 @@ ul {
     margin-right: 10vw;
     padding: 10px;
     text-align: center;
+}
+.portfolioBody a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #660722;
+}
+.portfolioBody a:hover {
+    text-decoration: underline;
 }
 .portfolioBody img {
     border: 1px solid black;
@@ -206,7 +215,7 @@ ul {
        grid-column-start: 1;
        grid-row-start: 2;
        line-height: auto;
-       margin: -30px 0px 10px 10px;
+       margin: -90px 0px 10px 10px;
        padding: 15px;
    }
    .portfolioBody {
@@ -228,9 +237,13 @@ ul {
     }
     header {
         background-image: url("https://i.postimg.cc/mrGxtLR9/underwater-2618401-1920.jpg");
+        max-height: 90vh;
     }
     header h1 {
        margin-top: 250px; 
+    }
+    .aboutMe {
+        margin-top: -300px;
     }
     .contactIcon {
         width: 75px;
