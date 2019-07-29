@@ -8,26 +8,26 @@
   <link rel="stylesheet" href="portfolioCSS.css">
 </head>
 <body>  
-    <header class="bioHeader">
+    <header class="bioHeader" role="banner">
         <h1>Hi, I'm Heather, a front end web developer.</h1>
         <p>Also known by "Get off that computer or so help me" in my youth.</p>
             <address class="contactInfo">
                 <a href="mailto:jarvi213@umn.edu"><img src="https://i.postimg.cc/QM8g4p0d/70-512.png" 
-                class="contactIcon" alt="Email icon"></a>
+                class="contactIcon" alt="Email icon" title="Send Email"></a>
                 <a href="https://github.com/jarvi213"><img src="https://i.postimg.cc/4xbbQ8v0/Git-Hub-Mark.png" class="contactIcon"
-                alt="GitHub Icon"></a>
+                alt="GitHub Icon" title="View on GitHub"></a>
                 <a href="https://www.linkedin.com/in/h-m-jarvi213/"><img src="https://i.postimg.cc/y8zy9qR9/Linked-In-Logo.jpg" class="contactIcon"
-                alt="LinkedIn Icon"></a>
+                alt="LinkedIn Icon" title="View on LinkedIn"></a>
             </address>
     </header> 
-        <nav class="navbar">
-                <ul>
-                    <li><a href="news.asp">About</a></li>
-                    <li><a href="contact.asp">Portfolio</a></li>
-                    <li><a href="about.asp">Contact</a></li>
-                </ul>
-        </nav>
-    <section class="aboutMe">
+    <nav class="navbar" role="navigation">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="https://www.linkedin.com/in/h-m-jarvi213/" name="resume on LinkeIn">Resume</a></li>
+            <li><a href="mailto:jarvi213@umn.edu" title="Send Email">Contact</a></li>
+        </ul>
+    </nav> 
+    <section class="aboutMe" role="article" name="about">
         <h2 class="aboutMeHeader">About Me</h2>
         <p>I started coding in order to have the coolest LiveJournal page in high school 
         (oof), but I came back to web development as a career because of how much I enjoy 
@@ -39,7 +39,7 @@
         actors play Dungeons & Dragons on Twitch. 
         </p>
     </section>
-    <section class="portfolioWorks">
+    <section class="portfolioWorks" role="article">
         <h2 class="myWorkHeader">My Work</h2>
             <figure class="portfolioBody">
                 <img src="https://i.postimg.cc/3RmBsLj2/quizapp-Screenshot.jpg" alt="a photo of the Critical Role Quiz 
@@ -49,7 +49,6 @@
                 <p class="aboutProject">A quiz app designed with HTML, CSS, and Javascript.</p>
             </figure>
         </section>
-    </main>
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="

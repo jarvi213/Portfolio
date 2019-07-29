@@ -48,9 +48,6 @@ ul {
     margin: 0;
     padding: 0;
   }
-main {
-    margin-bottom: 10px;
-}
 nav {
     background-color: #fde34d;
     border: 1px solid black;
@@ -93,9 +90,6 @@ ul {
 .contactIcon {
     width: 50px;
     border-radius: 8px;
-}
-.navWrapper {
-    position: relative;
 }
 .portfolioBody {
     background-color: white;
@@ -182,6 +176,7 @@ ul {
 @media screen and (min-width: 721px) and (max-width: 1023px) {
     nav {
         font-size: 3vw;
+        height: 10vh;
     }
 }
 @media screen and (min-width: 1024px) { 
