@@ -52,8 +52,10 @@ ul {
 nav {
     background-color: #fde34d;
     border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     margin-bottom: 15px;
-    padding-right: 30vw;
     text-align: center;
     width: 100%;
 }
@@ -159,7 +161,7 @@ ul {
         justify-content: space-evenly;
     }
     nav {
-        font-size: 3vw;
+        font-size: 3vh;
         height: 7vh;
     }
     p {
@@ -180,13 +182,11 @@ ul {
         width: 90vw;
         margin: auto;
     }    
-}
-
-@media screen and (min-width: 721px) and (max-width: 1023px) {
-    nav {
-        font-size: 3vw;
-        height: 10vh;
-    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+   }
 }
 @media screen and (min-width: 1024px) { 
     body {
