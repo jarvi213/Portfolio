@@ -21,6 +21,9 @@ header {
     background-color: #000000;
     background: url("https://cdn.pixabay.com/photo/2017/06/15/17/31/background-2406119_960_720.jpg") center no-repeat;
     border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     color: white;
     margin: 25px 10vw 10px 10vw;
     padding: 30px;
@@ -91,6 +94,9 @@ ul {
     width: 50px;
     border-radius: 8px;
 }
+.navWrapper {
+    position: relative;
+}
 .portfolioBody {
     background-color: white;
     box-shadow: 10px 10px 30px 10px #660722;
@@ -126,7 +132,13 @@ ul {
     padding: 5px;
     opacity: 0.8;
 }  
-@media only screen and (min-width: 480px) and (max-width: 1024px) {
+@media only screen and (min-width: 480px) and (max-width: 1023px) {
+    address {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
     h1 {
         font-size: 6vw;
     }
@@ -134,7 +146,8 @@ ul {
         font-size: 5vw;
     }
     header {
-        height: 30vh;
+        border-radius: 0px;
+        height: auto;
         width: 100%;
         margin: 0px;
         display: flex;
@@ -143,15 +156,35 @@ ul {
         justify-content: space-evenly;
     }
     nav {
-        font-size: 3.5vw;
-        height: 5vh;
+        font-size: 3vw;
+        height: 7vh;
     }
     p {
         font-size: 3vw;
+        line-height: 140%;
     }
+    .aboutMe {
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        width: 90vw;
+    }
+    .contactIcon {
+        width: 5vh;
+    }
+    .portfolioWorks {
+        width: 90vw;
+        margin: auto;
+    }    
 }
 
-@media screen and (min-width: 1025px) { 
+@media screen and (min-width: 721px) and (max-width: 1023px) {
+    nav {
+        font-size: 3vw;
+    }
+}
+@media screen and (min-width: 1024px) { 
     body {
        display: grid;
        grid-template-areas:
@@ -163,8 +196,7 @@ ul {
    header {
        grid-row-start: 1;
        grid-row-end: 2;
-       margin: 70px 10px 10px 20px;
-       height: 75vh;
+       margin: 70px 10px 50px 20px;
    }
    nav {
        position: fixed;
@@ -192,4 +224,21 @@ ul {
        margin: 75px 30px 10px 30px;
    }
 }
-
+@media screen and (min-width: 2000px) { 
+    address {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: space-evenly;
+    }
+    header {
+        background-image: url("https://i.postimg.cc/mrGxtLR9/underwater-2618401-1920.jpg");
+    }
+    header h1 {
+       margin-top: 250px; 
+    }
+    .contactIcon {
+        width: 75px;
+        border-radius: 10px;
+    }
+}
