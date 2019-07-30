@@ -185,6 +185,10 @@ ul {
     .portfolioWorks {
         width: 90vw;
         margin: auto;
+    }
+    .portfolioWorks h2 {
+        margin-left: auto;
+        margin-right: auto;
     }    
     .sticky {
         position: fixed;
